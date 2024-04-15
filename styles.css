@@ -2,7 +2,7 @@
     direction: rtl;
     font-family: 'Neo Sans Arabic', Segoe UI;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     padding: 20px;
     transition: box-shadow .3s ease-in-out;
     box-shadow: 1px -1px 5px 0px #0000005e , -1px 1px 5px 0px #00000057 ;
@@ -22,13 +22,14 @@
 
 .list{
     flex: 1;
-    min-width: 210px;
+    min-width: 220px;
 }
 
 .list__heading{
     width: fit-content;
     position: relative;
     padding-bottom: .5rem;
+    margin-bottom: 1.3rem;
 }
 
 
@@ -59,16 +60,19 @@
 }
 
 .main-footer ::marker{
-    content: url(./footer-ball-samll.png);
+    content: url(./custom-marker.webp);
     color: darkcyan;
 }
 
 .main-footer a{
+    position: relative;
+    top: -.5rem;
+    padding-right: 4px;
     color: #484848;
     font-size: 14px;
-    padding-right:.5rem;
     text-decoration: none;
     transition: color .2s ease-in-out;
+    white-space: nowrap;
 }
 
 .main-footer li:hover a{
