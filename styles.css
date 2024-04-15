@@ -1,0 +1,77 @@
+.main-footer{
+    direction: rtl;
+    font-family: 'Neo Sans Arabic', Segoe UI;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px;
+    transition: box-shadow .3s ease-in-out;
+    box-shadow: 1px -1px 5px 0px #0000005e , -1px 1px 5px 0px #00000057 ;
+}
+
+.main-footer:hover{
+    box-shadow: 1px -1px 5px 0px #1369b442 , -1px 1px 5px 0px #1369b462 ;
+
+}
+
+.main-footer__top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.list{
+    flex: 1;
+    min-width: 210px;
+}
+
+.list__heading{
+    width: fit-content;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+
+.list__heading::after{
+    content: '';
+    position: absolute;
+    bottom:-.5rem;
+    right: 0;
+    height: 3px;
+    width: calc(1vw + 30px);
+    background-color:#004e93;
+    transition: width .3s ease-in-out;
+}
+
+.main-footer:hover .list__heading::after{
+    width: 100%;
+}
+
+.main-footer ul{
+    padding:0;
+    margin: 0;
+}
+
+.main-footer li {
+    padding: .5rem 0;
+    list-style: inside;
+    width: 100%;
+}
+
+.main-footer ::marker{
+    content: url(./footer-ball-samll.png);
+    color: darkcyan;
+}
+
+.main-footer a{
+    color: #484848;
+    font-size: 14px;
+    padding-right:.5rem;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+.main-footer li:hover a{
+    color: #ff0000db;
+}
+
